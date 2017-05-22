@@ -67,9 +67,11 @@
   padding-top: 50px;
   padding-bottom: 50px;
   .van-card{
+    text-align: center;
     height: 450px;
     padding: 10px;
     iframe{
+      margin: auto;
       width: 25rem;
       height: 25rem;
     }
