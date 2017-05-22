@@ -3,12 +3,13 @@ class PagesController < ApplicationController
   require "google_drive"
 
   def home
-  end
-
-  def garage
     session = GoogleDrive::Session.from_config("secrets.yml")
     @ws = session.spreadsheet_by_key("1NqZVMNxJUHP616obEGG_KcpBDMljjaMlMYwHId8XcXU").worksheets[0]
     @vans = @ws[7, 8]
+  end
+
+  def garage
+
 
   end
 end
