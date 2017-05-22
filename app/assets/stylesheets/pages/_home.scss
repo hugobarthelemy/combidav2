@@ -61,3 +61,26 @@
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
+
+
+.index-vans{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .van-card{
+    text-align: center;
+    height: 450px;
+    padding: 10px;
+    iframe{
+      margin: auto;
+      width: 25rem;
+      height: 25rem;
+    }
+    p {
+
+    }
+    a{
+      text-align: center;
+    }
+  }
+
+}

@@ -27,4 +27,30 @@
 
   </div>
 </class>
+<class class="wrapper">
+  <div class="container index-vans">
+    <div class="row">
+      <% (7..@ws.num_rows).each do |row| %>
+        <div class="col-xs-12 col-sm-6 col-md-4 van-card">
 
+            <iframe src="https://drive.google.com/file/d/<%=@ws[row, 1]%>/preview"></iframe>
+
+              <h4 class="card-title"><%= @ws[row, 6] %> de <%= @ws[row, 5] %> <%= @ws[row, 7] %></h4>
+              <p class="card-text" style="display:inline;">Prix : <%= @ws[row, 3] %> -
+                <% case @ws[row, 4] %>
+                <% when "Réservé" %>
+                  <div style="color: orange; display:inline;"; display:inline;><%= @ws[row, 4] %></div>
+                <% when "Vendu" %>
+                  <div style="color: red; display:inline;"><%= @ws[row, 4] %></div>
+                <% when "Disponible" %>
+                  <div style="color: green; display:inline;"><%= @ws[row, 4] %></div>
+                <% end %>
+              </p>
+              <p class="card-text">Origine : <%= @ws[row, 8] %></p>
+              <a href="<%= @ws[row, 9] %>" target="_blank" class="btn btn-primary">Plus de photos</a>
+
+        </div>
+      <% end %>
+    </div>
+  </div>
+</class>
