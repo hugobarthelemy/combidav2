@@ -62,8 +62,11 @@
   margin-bottom: 20px;
 }
 
-
+.wrapper{
+  background-color: #F7F6F9;
+}
 .index-vans{
+
   padding-top: 50px;
   padding-bottom: 50px;
   .van-card{
@@ -83,4 +86,14 @@
     }
   }
 
+}
+.contact{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h1{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
 }
