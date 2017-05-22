@@ -46,7 +46,7 @@
   justify-content: center;
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(image-path("landing.png"));
   @media only screen and (max-width : 480px) {
-    height: 187vh;
+    height: auto;
   }
 
 }
@@ -62,8 +62,11 @@
   margin-bottom: 20px;
 }
 
-
+.wrapper{
+  background-color: #F7F6F9;
+}
 .index-vans{
+
   padding-top: 50px;
   padding-bottom: 50px;
   .van-card{
@@ -83,4 +86,14 @@
     }
   }
 
+}
+.contact{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h1{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
 }
