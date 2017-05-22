@@ -64,11 +64,21 @@
 
 
 .index-vans{
-  iframe{
-    width: 25rem;
-    height: 25rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .van-card{
+    height: 450px;
+    padding: 10px;
+    iframe{
+      width: 25rem;
+      height: 25rem;
+    }
+    p {
+
+    }
+    a{
+      text-align: center;
+    }
   }
-  p {
-    color: red;
-  }
+
 }
